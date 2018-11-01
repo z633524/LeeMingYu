@@ -1,0 +1,8 @@
+.jumbotron {
+  position: relative;
+  background: #000 url("/assets/images/house_env.jpg") center center;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  overflow: hidden;
+}

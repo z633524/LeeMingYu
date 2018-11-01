@@ -1,0 +1,12 @@
+<div class="container-fluid my-5 text-center  border" id="product-section">
+  <h1 class="display-4">營業項目</h1>
+  <p>飲料、輕食、中日式定食、假日全天候早午餐、甜點</p>
+  <div class="row">
+    <div class="col-md-3 text-center my-auto h-100" *ngFor="let item of products">
+      <img class="d-block mx-auto my-4" src="{{ item.img }}">
+      <h1 class="display-5  my-4"> {{ item.title }} </h1>
+      <p class="my-4"> {{item.desc}} </p>
+      <a class="btn btn-warning btn-lg my-4">更多</a>
+    </div>
+  </div>
+</div>

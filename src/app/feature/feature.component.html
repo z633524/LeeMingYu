@@ -1,0 +1,18 @@
+<section class="container text-center" id="feature-section">
+    <h1 class="display-4">豐富菜色</h1>
+    <p>提供無線上網，入館需拖鞋，並穿著襪子。午餐時段每人低消一客定...</p>
+    <div class="row m-4">
+      <div class="col-sm-4" *ngFor="let item of food;">
+        <div class="card">
+          <img class="card-img-top" src=" {{item.img}} " />
+          <div class="card-body">
+            <h4 class="card-title">{{ item.name }}</h4>
+            <p class="card-text">{{ item.price }}</p>
+            <button (click)="onSelect(item)" class="btn btn-primary">
+                選取
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
